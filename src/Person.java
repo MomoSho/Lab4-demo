@@ -32,6 +32,15 @@ public class Person
 	public void setName(String n) 
 	{ 
 		// ternary operator
+		/*if (n.isEmpty())
+		{
+			name = "NONAME";
+		}
+		else
+		{
+			name = n;
+		}*/
+		
 		name = (n.isEmpty()) ? "NONAME" : n; 
 	}
 	public void setAge(int a) { age = (a < 0) ? 0 : a; }
@@ -45,7 +54,19 @@ public class Person
 
 	// TODO: run code first, then write a toString()
 	// TODO: run code first, then write a equals()
-
+	public boolean equals(Object person)
+	{
+		if (!(person instanceof Person))
+		{
+			return false;
+		}
+		
+		Person otherPerson = (Person) person;
+		boolean sameName = otherPerson.getName().equals(this.getName());
+		boolean sameAge = otherPerson.getAge() == this.getAge();
+		return sameName && sameAge;
+	}
+	
 	public static void main(String[] args)
 	{
 		Person me = new Person("MoSho", 25);

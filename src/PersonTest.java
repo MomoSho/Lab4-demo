@@ -28,11 +28,15 @@ public class PersonTest
 
 		// Assertions to verify functionality of the constructor and getters
 		// Assert.assertEquals(Message_to_display_if_test_fails, expectedValue, actualResultFromCode)
-		Assert.assertEquals("Empty person1's name incorrect. Should have no name", noname, per1.getName());
-		Assert.assertEquals("Empty person1's age incorrect. Should have no age", noage, per1.getAge());
+		Assert.assertEquals("Empty person1's name incorrect. Should have no name", 
+							"NONAME", per1.getName());
+		Assert.assertEquals("Empty person1's age incorrect. Should have no age", 
+							noage, per1.getAge());
 
-		Assert.assertEquals("Empty person2's name incorrect. Should have no name", noname, per2.getName());
-		Assert.assertEquals("Empty person2's age incorrect. Should have no age", noage, per2.getAge());
+		Assert.assertEquals("Empty person2's name incorrect. Should have no name", 
+							noname, per2.getName());
+		Assert.assertEquals("Empty person2's age incorrect. Should have no age", 
+							noage, per2.getAge());
 	}
 
 	/**
@@ -74,9 +78,9 @@ public class PersonTest
 		String name5 = "";
 		int age5 = 2254;
 		// Observe Person coverage before and after removing the comments
-		//Person per5 = new Person(name5, age5);
-		//Assert.assertEquals("Person5's name incorrect.", "NONAME", per5.getName());
-		//Assert.assertEquals("Person5's age incorrect.", age5, per5.getAge());
+		Person per5 = new Person(name5, age5);
+		Assert.assertEquals("Person5's name incorrect.", "NONAME", per5.getName());
+		Assert.assertEquals("Person5's age incorrect.", age5, per5.getAge());
 	}
 
 	// TODO: run code first, then write remaining tests
