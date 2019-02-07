@@ -40,7 +40,3 @@ public class Hero extends Person
 <<<<<<< HEAD
 	}*/
 }
-=======
-	}
-}
->>>>>>> ad38ad153328f6e24a562b3f9298ec07d237069f
