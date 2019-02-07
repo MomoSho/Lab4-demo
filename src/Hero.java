@@ -37,6 +37,5 @@ public class Hero extends Person
 	{
 		return " 1. Eat breakfast\n 2. Make lunch\n 3. Go to work\n" +
 				" 4. Go on patrol\n 5. Kick some ass\n 6. Wash up";
-<<<<<<< HEAD
 	}*/
 }
